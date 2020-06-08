@@ -1,0 +1,26 @@
+{
+  "name": "@raydeck/passcode",
+  "version": "1.0.0",
+  "description": "Random alphanumeric passcode generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhdeck/passcode.git"
+  },
+  "keywords": [
+    "password",
+    "passcode"
+  ],
+  "author": "Ray Deck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhdeck/passcode/issues"
+  },
+  "homepage": "https://github.com/rhdeck/passcode#readme",
+  "dependencies": {
+    "random-number-csprng": "^1.0.2"
+  }
+}
