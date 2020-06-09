@@ -17,7 +17,6 @@ const sets = {
   allalphanumeric,
 };
 async function makePassCode(length = 6, key = "number") {
-  const a = [];
   const set = sets[key];
   const a = await Promise.all(
     new Array(length).fill("").map(randomNumber(0, set.length - 1))
