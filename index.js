@@ -2,11 +2,11 @@ const randomNumber = require("random-number-csprng");
 const number = "0123456789";
 const lowercase = "abcdefghijklmnopqrstuvwxyz";
 const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const alphanumeric = number + lowercase;
+const symbols = "-_+;></";
 const loweralphanumeric = alphanumeric;
 const upperalphanumeric = number + uppercase;
 const allalphanumeric = number + lowercase + uppercase;
-
+const all = allalphanumeric + symbols;
 const sets = {
   number,
   lowercase,
@@ -15,6 +15,7 @@ const sets = {
   loweralphanumeric,
   upperalphanumeric,
   allalphanumeric,
+  all,
 };
 async function makePassCode(length = 6, key = "number") {
   const set = sets[key];
