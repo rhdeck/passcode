@@ -21,6 +21,6 @@ async function makePassCode(length = 6, key = "number") {
   const a = await Promise.all(
     new Array(length).fill("").map(() => randomNumber(0, set.length - 1))
   );
-  return a.join("");
+  return a.map((i) => set[i]).join("");
 }
 module.exports = makePassCode;
