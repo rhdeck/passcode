@@ -11,7 +11,6 @@ const sets = {
   number,
   lowercase,
   uppercase,
-  alphanumeric,
   loweralphanumeric,
   upperalphanumeric,
   allalphanumeric,
